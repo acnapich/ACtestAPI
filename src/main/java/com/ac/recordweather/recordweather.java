@@ -23,7 +23,7 @@ public class recordweather {
     
     public static void main(String[] args) {
         
-        String myApiKey ="cca7271ed15947d7cb6235771f5db72e";
+        String myApiKey = args[0];
         String apiToCall = "https://api.openweathermap.org/data/2.5/onecall?lat=45.25&lon=9.18&appid=" + myApiKey;
         Header headerKey = new Header("X-Kount-Api-Key", "<!--Actual Kount RIS/API Key goes here-->");
         HttpClient client = new HttpClient();
